@@ -31,6 +31,17 @@ console.log(countVowels(testString));＀
 
 // 2. stringReversal
 
+var stringReversal = function(string){
+  var results = [];
+  loop(string, function(letter){
+    results.unshift(letter); 
+    console.log(results); 
+  });
+  return results.join(""); 
+};
+
+console.log(stringReversal(testString));＀
+
 // 3. isPalindrome
 
 // 4. largestNumber
