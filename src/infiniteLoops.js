@@ -10,6 +10,25 @@ var loop = function(collection, callback){
 
 // 1. countVowels
 
+
+var testString = 'hello';
+var countVowels = function(string){
+    var count = 0;
+    loop(string, function(letter){
+    
+    if ( letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter === 'u' ) {
+      console.log('This is a vowel: ', letter);
+      count ++;
+    }
+
+  });
+
+  return count;
+
+};
+
+console.log(countVowels(testString));＀
+
 // 2. stringReversal
 
 // 3. isPalindrome
